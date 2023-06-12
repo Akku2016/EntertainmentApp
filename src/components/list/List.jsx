@@ -3,6 +3,8 @@ import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import ListItem from '../listItem/ListItem';
 import { useRef, useState } from 'react';
+ 
+
 const List = () => {
     const [isMoved, setIsMoved] =useState(false);
     const [slideNumber, setSlideNumber] = useState(0);
@@ -31,7 +33,11 @@ const List = () => {
          className='sliderArrow left'  
          onClick={() =>handledClick("left")}
          style={{display:!isMoved && "none"}}/> 
+
+ 
+
         <div className="container" ref={listRef}  >
+       
             <ListItem index={0}/>
             <ListItem index={1}/>
             <ListItem  index={2}/>

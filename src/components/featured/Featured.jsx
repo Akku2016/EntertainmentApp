@@ -5,9 +5,9 @@ import './featured.scss'
 const Featured = ({ type }) => {
   return (
     <div className='featured'> 
-    {type && (
+     
       <div className="category">
-         <span>{type === "movie" ? "Movies" : "Series"}
+         <span>  Movies or Series
          </span>
          <select name="genre" id="genre">
             <option>Genre</option>
@@ -26,9 +26,9 @@ const Featured = ({ type }) => {
             <option value="documentary">Documentary</option>
          </select>
       </div>
-    )
+    
 
-    }
+    
      <img 
      src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"   
      alt=""   
